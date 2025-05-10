@@ -1,0 +1,106 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 98%; /* Proche du blanc atelier F5F5F5 */
+    --foreground: 210 29% 24%; /* Noir professionnel 2C3E50 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 24%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 24%;
+
+    --primary: 210 60% 30%; /* Bleu acier 1F4E79 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 67% 46%; /* Rouge atelier C0392B */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 12% 43%;
+
+    --accent: 28 80% 52%; /* Orange sécurité E67E22 */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 210 60% 30%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 210 29% 24%; /* Noir professionnel 2C3E50 */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 210 60% 30%; /* Bleu acier 1F4E79 */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 80% 52%; /* Orange sécurité E67E22 */
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 29% 29%;
+    --sidebar-ring: 210 60% 30%;
+  }
+
+  .dark {
+    --background: 210 29% 19%; /* Plus foncé que le noir professionnel */
+    --foreground: 210 20% 98%;
+
+    --card: 210 29% 24%; /* Noir professionnel 2C3E50 */
+    --card-foreground: 210 20% 98%;
+
+    --popover: 210 29% 24%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 60% 40%; /* Bleu acier plus clair */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 67% 50%; /* Rouge atelier plus clair */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 24% 16%;
+    --muted-foreground: 210 12% 70%;
+
+    --accent: 28 80% 57%; /* Orange sécurité plus clair */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 24% 18%;
+    --input: 210 24% 18%;
+    --ring: 210 60% 40%;
+    
+    --sidebar-background: 210 29% 19%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 210 60% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 80% 57%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 29% 24%;
+    --sidebar-ring: 210 60% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .sidebar-item {
+    @apply flex items-center gap-3 rounded-md px-3 py-2 text-sidebar-foreground hover:bg-sidebar-accent/10 hover:text-sidebar-accent transition-colors;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-sidebar-accent/10 text-sidebar-accent;
+  }
+}
