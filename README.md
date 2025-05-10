@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sgama (Système de Gestion d'Atelier Mécanique Automobile/Automotive Workshop Management System) is a comprehensive software solution designed to simplify and optimize daily operations for automotive professionals. Our platform streamlines workshop management, client interactions, and vehicle maintenance tracking.
+Sgama (Système de Gestion d'Atelier Mécanique Automobile) / AWMS(Automotive Workshop Management System) is a comprehensive software solution designed to simplify and optimize daily operations for automotive professionals. Our platform streamlines workshop management, client interactions, and vehicle maintenance tracking.
 
 ## Key Features
 
